@@ -118,10 +118,11 @@ Developed by: Aavula Tharun.
 RegisterNumber:212221240003  
 */
  
- 
+
 # SR Flip-flop
 ## Program:
 
+~~~
 module EX_SR(s,r,clock,q,qbar);
 input s,r,clock;
 output q,qbar;
@@ -131,6 +132,7 @@ nand(y,r,clock);
 nand(q,x,qbar);
 nand(qbar,y,q);
 endmodule
+~~~
 
 ### RTL LOGIC FOR FLIPFLOPS 
 ![SR output](https://user-images.githubusercontent.com/93427201/168079268-ff1517fe-ef63-4fd5-84db-898a715132b5.png)
@@ -142,6 +144,7 @@ endmodule
 
 # D Flip-flop
 ## program:
+~~~
 module DF(d,clock,q,qbar);
 input d,clock;
 output q,qbar;
@@ -152,6 +155,7 @@ nand(y,dbar,clock);
 nand(q,x,qbar);
 nand(qbar,y,q);
 endmodule
+~~~
 
 
 ### RTL LOGIC FOR FLIPFLOPS
@@ -167,7 +171,7 @@ endmodule
 # J Flip-flop
 
 ## Program:
-
+~~~
 module JK(J,K,Clk,Q,Qbar);
 input J,K,Clk;
 output Q,Qbar;
@@ -177,6 +181,7 @@ nand(S,K,Clk,Q);
 nand(Q,P,Qbar);
 nand(Qbar,Q,S);
 endmodule
+~~~
 
 
 ### RTL LOGIC FOR FLIPFLOPS
@@ -192,7 +197,7 @@ endmodule
 
 # T Flip-flop
 ## Program:
-
+~~~
 module TF(T,Clk,Q,Qbar);
 input T,Clk;
 output Q,Qbar;
@@ -202,7 +207,7 @@ nand(S,T,Clk,Q);
 nand(Q,P,Qbar);
 nand(Qbar,S,Q);
 endmodule
-
+~~~
 
 ### RTL LOGIC FOR FLIPFLOPS
 
